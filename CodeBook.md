@@ -66,12 +66,14 @@ The attached R script (run_analysis.R) performs the following to clean up the da
 * Merges the training and test sets to create one data set as in the original description. 
 * Uses features.txt to extract only the measurements pertaining to the mean and standard deviation for each measurement.
 * Reads activity_labels.txt before applying the descriptive activity names:
-		+ walking
-        + walking_upstairs
-        + walking_downstairs
-        + sitting
-        + standing
-        + laying
+
+		walking
+        walking_upstairs
+        walking_downstairs
+        sitting
+        standing
+        laying
+        
 * The script then labels the feature names, with all spurious brackets removed and all characters converted to lower case.
 * The data is then merge to create a data frame containing activity labels and subject IDs. The first column of this data frame contains subject IDs (ints 1-30), the second column activity names, and the last 66 columns are measurements. 
 * Lastly, the script creates a new tidy data set with the average of each measurement for each activity and each subject. 
